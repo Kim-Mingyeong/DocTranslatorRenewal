@@ -1,0 +1,129 @@
+<!-- Main Contents -->
+<div class="mt-5">
+<div class="mx-5 contents">
+    <!-- Text of Document Translator Button -->
+    <ul class="nav nav-pills mb-2 p-1" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-text-tab" data-bs-toggle="pill" data-bs-target="#pills-text" type="button" role="tab" aria-controls="pills-text" aria-selected="true">텍스트</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-document-tab" data-bs-toggle="pill" data-bs-target="#pills-document" type="button" role="tab" aria-controls="pills-document" aria-selected="false">문서</button>
+    </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+    <!-- Pills Text -->
+    <div class="tab-pane fade show active" id="pills-text" role="tabpanel" aria-labelledby="pills-text-tab">
+        <div class="row select text-center p-1">
+        <div class="col">
+            <div class="mb-1">
+            <select class="form-select" aria-label="Default select" >
+                <option value="korean" selected>한국어</option>
+                <option value="english">영어</option>
+                <option value="japanese">일본어</option>
+                <option value="chinese">중국어</option>
+                <option value="spanish">스페인어</option>
+                <option value="french">프랑스어</option>
+            </select>
+            </div>
+            <div class="form-floating">
+            <textarea class="form-control bg-secondary bg-opacity-10" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px"></textarea>
+            <label for="floatingTextarea">번역할 내용을 입력하세요.</label>
+            </div>
+        </div>
+        <div class="col-1">
+            <button class="btn" id="translate-icon">
+                <i class="bi bi-arrow-right"></i>
+            </button>
+        </div>
+        <div class="col">
+            <div class="mb-1">
+            <select class="form-select" aria-label="Default select">
+                <option value="korean">한국어</option>
+                <option value="english" selected>영어</option>
+                <option value="japanese">일본어</option>
+                <option value="chinese">중국어</option>
+                <option value="spanish">스페인어</option>
+                <option value="french">프랑스어</option>
+            </select>
+            </div>
+            <div class="form-floating">
+            <textarea class="form-control bg-secondary bg-opacity-10" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px"></textarea>
+            <label for="floatingTextarea"></label>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Pills Document -->
+    <div class="tab-pane fade" id="pills-document" role="tabpanel" aria-labelledby="pills-document-tab">
+        <div class="d-flex justify-content-center align-items-center bd-highlight mb-3">
+        <div class="p-2 bd-highlight">입력 언어 :</div>
+        <div class="p-1 bd-highlight">
+            <select class="form-select select-language" aria-label="Default select" >
+            <option value="korean" selected>한국어</option>
+            <option value="english">영어</option>
+            <option value="japanese">일본어</option>
+            <option value="chinese">중국어</option>
+            <option value="spanish">스페인어</option>
+            <option value="french">프랑스어</option>
+            </select>
+        </div>
+        <div class="p-2 ms-5 bd-highlight">번역: </div>
+        <div class="p-1 bd-highlight">
+            <select class="form-select select-language" aria-label="Default select">
+            <option value="korean" selected>한국어</option>
+            <option value="english">영어</option>
+            <option value="japanese">일본어</option>
+            <option value="chinese">중국어</option>
+            <option value="spanish">스페인어</option>
+            <option value="french">프랑스어</option>
+            </select>
+        </div>
+        </div>
+        <form class="text-center" method="post" enctype="form-data" >
+        <div>
+            <label for="fileUpload"></label>
+            <input type="file" id="fileUpload">
+        </div>
+        <!-- 변환할 파일 선택 -->
+        <div class="d-flex justify-content-center mt-3 ps-4">
+            <div class="form-check form-check-inline">
+            <img src="img/doc.png" width="35">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="transform-word" value="option1">
+            <div class="form-check-label ratio-text" for="transform-word"">Word 변환</div>
+            </div>
+            <div class="form-check form-check-inline">
+            <img src="img/ppt.png" width="35">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="transform-ppt" value="option2">
+            <div class="form-check-label ratio-text" for="transform-ppt">PowerPoint 변환</div>
+            </div>
+            <div class="form-check form-check-inline">
+            <img src="img/xls.png" width="35">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="transform-excel" value="option3">
+            <div class="form-check-label ratio-text" for="transform-excel">Excel 변환</div>
+            </div>
+            <div class="form-check form-check-inline">
+            <img src="img/pdf.png" width="35">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="transform-pdf" value="option4">
+            <div class="form-check-label ratio-text" for="transform-pdf">PDF 변환</div>
+            </div>
+            <div class="form-check form-check-inline">
+            <img src="img/jpg.png" width="35">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="transform-jpg" value="option5">
+            <div class="form-check-label ratio-text" for="transform-jpg">JPG 변환</div>
+            </div>
+            <div class="form-check form-check-inline">
+            <img src="img/png.png" width="35">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="transform-png" value="option6">
+            <div class="form-check-label ratio-text" for="transform-png">PNG 변환</div>
+            </div>
+            
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-3 mb-5">
+            <button class="btn btn-self-made px-5" type="button">문서 저장</button>
+        </div>
+        </form>
+    </div>
+    </div>
+    <hr class="mt-5">
+</div>
+</div>

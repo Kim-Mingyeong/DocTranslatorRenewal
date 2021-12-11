@@ -1,0 +1,308 @@
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+.nav-link{
+    color: #000;
+}
+.nav-link:hover{
+    color: #da4c25;
+}
+.nav-link.active{
+    color: #da4c25;
+}
+.nav-pills .nav-link.active
+{
+    background-color: #ff5a2c;
+}
+/*--------------------------------------------------------------
+# signin
+--------------------------------------------------------------*/
+#state-signin{
+  float: left;
+}
+#helper-signin{
+  font-size: 0.7em;
+  color: gray;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+.btn-self-made{
+  background-color: #ff5a2c;/* #30CB8A; */
+  color: #fff;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.header{
+    background: rgb(240, 244, 248);
+}
+.bi-arrow-up-square, .bi-arrow-down-square {
+    color: #ff5a2c
+}
+/* PC TOP 버튼 */
+#scrollTopPc {
+    display: none;
+    position: fixed;
+    bottom: 64px; /* 윗쪽 끝에서부터의 거리 */
+    right: 15px; /* 오른쪽 끝에서부터의 거리 */
+    cursor: pointer;
+    z-index: 99;
+}
+/* PC DOWN 버튼 */
+#scrollDownPc {
+display: none;
+position: fixed;
+bottom: 30px; /* 윗쪽 끝에서부터의 거리 */
+right: 15px; /* 오른쪽 끝에서부터의 거리 */
+cursor: pointer;
+z-index: 99;
+}
+/*--------------------------------------------------------------
+# Featured Services
+--------------------------------------------------------------*/
+.featured-services {
+padding: 0;
+margin-bottom: 50px;
+}
+.featured-services .icon-box {
+padding: 20px;
+color: #5f687b;
+background: #f9f9fa;
+border-radius: 4px;
+border: 1px solid #f9f9fa;
+transition: 0.3s;
+height: 100%;
+}
+.featured-services .icon {
+margin: 0 0 15px 0;
+}
+.featured-services .icon i {
+color: #ff5a2c;
+font-size: 36px;
+}
+.featured-services .title {
+font-weight: 600;
+margin-bottom: 15px;
+font-size: 18px;
+}
+.featured-services .title a {
+color: #5f687b;
+transition: 0.3s;
+}
+.featured-services .icon-box:hover {
+border-color: #ff5a2c;
+}
+.featured-services .description {
+line-height: 24px;
+font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services {
+background: rgb(240, 244, 248);
+margin-bottom: 50px;
+}
+.icon-box {
+margin-bottom: 20px;
+padding: 30px;
+border-radius: 6px;
+background: #fff;
+}
+.services .icon-box i {
+float: left;
+color: #ff5a2c;
+font-size: 40px;
+line-height: 0;
+}
+.services .icon-box h4 {
+margin-left: 70px;
+font-weight: 700;
+margin-bottom: 15px;
+font-size: 18px;
+}
+.services .icon-box h4 a {
+color: #365870;
+transition: 0.3s;
+}
+
+.services .icon-box p {
+margin-left: 70px;
+line-height: 24px;
+font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 20px 0 30px 0;
+  }
+  .contact .info-box i {
+    font-size: 32px;
+    color: #ff5a2c;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  .contact .info-box h3 {
+    font-size: 20px;
+    color: #777777;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  .contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .contact .php-email-form {
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 60px;
+  }
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ff5a2c;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contact .php-email-form .error-message br + br {
+    margin-top: 25px;
+  }
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #ff5a2c;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #ff5a2c;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  .contact .php-email-form input:focus,
+  .contact .php-email-form textarea:focus {
+    border-color: #ff4a17;
+  }
+  .contact .php-email-form input {
+    padding: 10px 15px;
+  }
+  .contact .php-email-form textarea {
+    padding: 12px 15px;
+  }
+  .contact .php-email-form button[type="submit"] {
+    background: #ff5a2c;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  .contact .php-email-form button[type="submit"]:hover {
+    background: #ff5a2c;
+  }
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  margin-top: 100px;
+  color: #444444;
+}
+#footer .footer-info {
+  background: rgb(240, 244, 248);
+  padding: 30px;
+}
+#footer .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 25px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+#footer .footer-info p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Raleway", sans-serif;
+  margin: 0 2px 2px 0px;
+}
+#footer .footer-info svg{
+  color: #444444;
+}
+#footer .footer-info svg:hover{
+  color: #ff5a2c;
+}

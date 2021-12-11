@@ -1,0 +1,126 @@
+/*--------------------------------------------------------------
+# custom
+--------------------------------------------------------------*/
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  padding-top: 30px;
+}
+#form{
+  padding-bottom: 50px;
+}
+.line{
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+.btn-self-made{
+  max-width: 700px;
+  display: block;
+  margin: auto;
+}
+/*--------------------------------------------------------------
+# custom-form-control
+--------------------------------------------------------------*/
+.custom-form-control{
+  padding-top: 5px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+}
+.custom-form-control label{
+  display: inline-block;
+  margin-bottom: 5px;
+  
+}
+.custom-form-control input{
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.custom-form-control.success input{
+  border-color: #78c297;
+}
+.custom-form-control.error input{
+  border-color: #ff9494;
+}
+.custom-form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+.custom-form-control.success i.bi-check-circle-fill{
+  color: #78c297;
+  visibility: visible;
+}
+.custom-form-control.error i.bi-exclamation-circle-fill{
+  color: #ff9494;
+  visibility: visible;
+}
+.custom-form-control small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.custom-form-control.error small{
+  color: #ff9494;
+  visibility: visible;
+}
+/*--------------------------------------------------------------
+# custom-form-phone
+--------------------------------------------------------------*/
+.custom-form-phone{
+  padding-bottom: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+}
+/*--------------------------------------------------------------
+# custom-form-check
+--------------------------------------------------------------*/
+.custom-form-check{
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+}
+.custom-form-check i {
+  visibility: hidden;
+  position: absolute;
+  margin-left: 10px;
+}
+.form-check-input:checked{
+  border-color: #78c297;
+  background: #78c297;
+}
+.custom-form-check.success i.bi-check-circle-fill{
+  color: #78c297;
+  visibility: visible;
+}
+.custom-form-check.error i.bi-exclamation-circle-fill{
+  color: #ff9494;
+  visibility: visible;
+}
+.custom-form-check small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.custom-form-check.error small{
+  color: #ff9494;
+  visibility: visible;
+}

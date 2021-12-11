@@ -1,0 +1,57 @@
+.contents{
+    margin-bottom: 100px;
+}
+.select-language{
+    width: 180px;
+}
+/*--------------------------------------------------------------
+# translate-icon
+--------------------------------------------------------------*/
+#translate-icon{
+    font-size: 20px;
+    border-color: #ff5a2c;/* #30CB8A; */
+    color: #ff5a2c;
+    position: relative;
+    top: 100px;
+}
+#translate-icon:hover{
+    background-color: #ff5a2c;/* #30CB8A; */
+    color: #fff;
+}
+/*--------------------------------------------------------------
+# file-dorpdown
+--------------------------------------------------------------*/
+input[type=file]{
+    width: 620px;
+    height: 250px;
+    background-color: #6C757D1A;
+    border-radius: 5px;
+    border: 1px solid #6C757D1A;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+input[type=file]:hover {
+    border: 3px dashed #ff5a2c;
+    background-color: #ff5a2c5e;
+}
+input[type=file]::file-selector-button {
+    display: block;
+    width: 620px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    
+}
+input[type=file]::file-selector-button:hover {
+    display: block;
+}
+/*--------------------------------------------------------------
+# radio
+--------------------------------------------------------------*/
+.ratio-text{
+    font-size: 12px;
+}
+.form-check-input:checked {
+    background-color: #ff5a2c;
+    border-color: #ff5a2c;
+}
